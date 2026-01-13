@@ -20,9 +20,6 @@ A modern, responsive Product Management System built with **Vanilla JavaScript**
 You can check the live version of the project here:  
 [Live Demo](https://product-management-alpha-teal.vercel.app/)
 
-## 📸 Screenshots
-*(Optional: You can add an image of your project here)*
-
 ## 📝 How to Use
 1. Enter the product Name, Price, and Category.
 2. Click **Add Product** to save it.
