@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Management</title>
+    <link rel="icon" href="./image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="glass-panel p-4 mb-4">
+            <h2 class="text-center mb-4 main-title">
+                <img src="./image/Product Management.PNG" class="main-icon" alt="icon">
+                Product Management
+            </h2>
+            <div class="row g-3">
+                <div class="col-md-4"> <input type="text" id="pName" class="form-control custom-input"
+                        placeholder="Product Name">
+                </div>
+                <div class="col-md-4">
+                    <input type="number" id="pPrice" class="form-control custom-input" placeholder="Price">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="pCategory" class="form-control custom-input" placeholder="Category">
+                </div>
+                <div class="col-12">
+                    <button onclick="addProduct()" id="mainBtn" class="btn btn-glow w-100 py-2">Add Product</button>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <input type="text" oninput="searchProduct(this.value)" class="form-control custom-input search-bar"
+                    placeholder="Search by name...">
+            </div>
+        </div>
+
+        <div class="table-responsive-custom">
+            <h3 class="table-title">Products Table</h3>
+            <table class="table modern-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

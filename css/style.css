@@ -1,0 +1,157 @@
+:root {
+    --primary-glow: #6366f1;
+    --bg-dark: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+}
+
+.main-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--primary-glow);
+    box-shadow: 0 0 15px var(--primary-glow);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+body {
+    background: var(--bg-dark);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.custom-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    padding: 12px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.main-title img {
+    filter: drop-shadow(0 0 8px var(--primary-glow));
+    border-radius: 50%;
+    margin-right: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+}
+
+.btn-glow {
+    background: var(--primary-glow);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.table-responsive-custom {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px 5px;
+    margin-top: 20px;
+}
+
+.modern-table {
+    background-color: transparent !important;
+    color: white !important;
+    width: 100% !important;
+    border-collapse: collapse;
+}
+
+.modern-table thead th {
+    background: rgba(99, 102, 241, 0.2) !important;
+    color: var(--primary-glow) !important;
+    border-bottom: 2px solid var(--primary-glow) !important;
+    padding: 10px !important;
+    text-align: center;
+}
+
+.modern-table tbody td {
+    background: transparent !important;
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    padding: 12px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.modern-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.modern-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.is-invalid {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.3) !important;
+}
+
+.is-invalid:focus {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.5) !important;
+    outline: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .modern-table {
+        table-layout: fixed !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+
+    .modern-table th:nth-child(1), .modern-table td:nth-child(1) {
+        width: 5% !important;
+    }
+
+    .modern-table th:nth-child(2), .modern-table td:nth-child(2) {
+        width: 20% !important;
+    }
+
+    .modern-table th:nth-child(3), .modern-table td:nth-child(3) {
+        width: 15% !important;
+    }
+
+    .modern-table th:nth-child(4), .modern-table td:nth-child(4) {
+        width: 20% !important;
+    }
+
+    .modern-table th:nth-child(5), .modern-table td:nth-child(5) {
+        width: 18% !important;
+    }
+
+    .modern-table th:nth-child(6), .modern-table td:nth-child(6) {
+        width: 16% !important;
+    }
+
+    .modern-table td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 10px 2px ;
+        font-size: 12px ;
+    }
+
+    .modern-table .btn-circle {
+        width: 28px ;
+        height: 28px ;
+        font-size: 10px ;
+    }
+}
