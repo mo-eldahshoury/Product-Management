@@ -22,6 +22,12 @@ body {
     margin: 0;
 }
 
+.header-content h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
 .glass-panel {
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
@@ -111,47 +117,79 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .modern-table {
-        table-layout: fixed !important;
+    .table-title {
+        font-size: 0;
+        color: var(--primary-glow);
+        text-shadow: 0 0 10px var(--primary-glow);
+    }
+
+    .table-title::before {
+        content: "Product Cards";
+        font-size: 1.5rem;
+    }
+
+    .modern-table thead {
+        display: none;
+    }
+
+    .modern-table, .modern-table tbody, .modern-table tr, .modern-table td {
+        display: block;
         width: 100% !important;
-        border-collapse: collapse !important;
     }
 
-    .modern-table th:nth-child(1), .modern-table td:nth-child(1) {
-        width: 5% !important;
+    .modern-table tr {
+        margin-bottom: 20px;
+        background: var(--glass-bg) !important;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 20px;
+        padding: 15px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
     }
 
-    .modern-table th:nth-child(2), .modern-table td:nth-child(2) {
-        width: 20% !important;
-    }
-
-    .modern-table th:nth-child(3), .modern-table td:nth-child(3) {
-        width: 15% !important;
-    }
-
-    .modern-table th:nth-child(4), .modern-table td:nth-child(4) {
-        width: 15% !important;
-    }
-
-    .modern-table th:nth-child(5), .modern-table td:nth-child(5) {
-        width: 15% !important;
-    }
-
-    .modern-table th:nth-child(6), .modern-table td:nth-child(6) {
-        width: 15% !important;
+    .modern-table tr:hover {
+        transform: translateY(-5px) scale(1.02);
+        border-color: var(--primary-glow);
+        box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2);
+        background: rgba(99, 102, 241, 0.05) !important;
     }
 
     .modern-table td {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        padding: 10px 2px ;
-        font-size: 12px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px !important;
+        border: none !important;
+        font-size: 14px !important;
     }
 
-    .modern-table .btn-circle {
-        width: 28px ;
-        height: 28px ;
-        font-size: 10px ;
+    .modern-table td::after {
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .modern-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: var(--primary-glow);
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .btn-action-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 15px !important;
+    }
+
+    .btn-sm-custom {
+        padding: 5px 15px !important;
+        font-size: 12px !important;
+        border-radius: 20px !important;
+        flex: 1;
     }
 }
