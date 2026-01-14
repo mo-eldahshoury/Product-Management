@@ -69,6 +69,7 @@ body {
     border-radius: 12px;
     padding: 15px 5px;
     margin-top: 20px;
+    padding: 10px
 }
 
 .modern-table {
@@ -193,3 +194,4 @@ body {
         flex: 1;
     }
 }
+
