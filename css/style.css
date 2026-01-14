@@ -134,11 +134,11 @@ body {
     }
 
     .modern-table th:nth-child(5), .modern-table td:nth-child(5) {
-        width: 18% !important;
+        width: 15% !important;
     }
 
     .modern-table th:nth-child(6), .modern-table td:nth-child(6) {
-        width: 16% !important;
+        width: 15% !important;
     }
 
     .modern-table td {
