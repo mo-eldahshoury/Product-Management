@@ -23,7 +23,7 @@ function addProduct() {
             icon: 'error',
             confirmButtonColor: '#6366f1'
         });
-        return; 
+        return;
     }
 
     var product = {
@@ -56,22 +56,21 @@ function clearForm() {
 
 
 function displayProducts() {
-    var cartona = "";
-
-    for (var i = 0; i < allProducts.length; i++) {
+    let cartona = "";
+    for (let i = 0; i < allProducts.length; i++) {
         cartona += `
-            <tr>
-                <td data-label="Index">${i + 1}</td>
-                <td data-label="Name">${allProducts[i].name}</td>
-                <td data-label="Price">${allProducts[i].price}</td>
-                <td data-label="Category">${allProducts[i].category}</td>
-                <td data-label="Update">
-                    <button onClick="prepareUpdate(${i})" class="btn btn-warning btn-sm">Update</button>
-                </td>
-                <td data-label="Delete">
-                    <button onClick="deleteProduct(${i})" class="btn btn-danger btn-sm">Delete</button>
-                </td>
-            </tr>`;
+        <tr>
+            <td data-label="#">${i + 1}</td>
+            <td data-label="NAME">${allProducts[i].name}</td>
+            <td data-label="PRICE">${allProducts[i].price}</td>
+            <td data-label="CATEGORY">${allProducts[i].category}</td>
+            <td data-label="UPDATE">
+                <button onclick="prepareUpdate(${i})" class="btn btn-warning btn-sm">Update</button>
+            </td>
+            <td data-label="DELETE">
+                <button onclick="deleteProduct(${i})" class="btn btn-danger btn-sm">Delete</button>
+            </td>
+        </tr>`;
     }
     document.getElementById('tbody').innerHTML = cartona;
 }
@@ -84,22 +83,21 @@ function deleteProduct(index) {
 }
 
 function search(term) {
-    var term = document.getElementById('search').value;
     var cartona = "";
 
     for (var i = 0; i < allProducts.length; i++) {
         if (allProducts[i].name.toLowerCase().includes(term.toLowerCase()) == true) {
             cartona += `
                 <tr>
-                    <td>${i + 1}</td>
-                    <td>${allProducts[i].name}</td>
-                    <td>${allProducts[i].price}</td>
-                    <td>${allProducts[i].category}</td>
-                    <td>
-                        <button onClick="prepareUpdate(${i})" class="btn btn-warning btn-sm">Update</button>
+                    <td data-label="#">${i + 1}</td>
+                    <td data-label="NAME">${allProducts[i].name}</td>
+                    <td data-label="PRICE">${allProducts[i].price}</td>
+                    <td data-label="CATEGORY">${allProducts[i].category}</td>
+                    <td data-label="UPDATE">
+                        <button onclick="prepareUpdate(${i})" class="btn btn-warning btn-sm">Update</button>
                     </td>
-                    <td>
-                        <button onClick="deleteProduct(${i})" class="btn btn-danger btn-sm">Delete</button>
+                    <td data-label="DELETE">
+                        <button onclick="deleteProduct(${i})" class="btn btn-danger btn-sm">Delete</button>
                     </td>
                 </tr>
             `;
