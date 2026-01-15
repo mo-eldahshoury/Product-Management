@@ -3,6 +3,7 @@
 A modern, responsive Product Management System built with **Vanilla JavaScript** and styled with **Bootstrap 5**. This project features a sleek Dark Mode UI and integrated **SweetAlert2** for an enhanced user experience.
 
 ## ✨ Features
+
 * **Full CRUD Operations:** Create, Read, Update, and Delete products.
 * **Search Functionality:** Real-time search by product name.
 * **Data Persistence:** Uses `localStorage` to save data even after page refresh.
