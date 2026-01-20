@@ -12,6 +12,7 @@ A modern, responsive Product Management System built with **Vanilla JavaScript**
 * **Modern UI:** Dark theme with neon-glow effects and glassmorphism.
 
 ## 🛠️ Tech Stack
+
 * **HTML5** & **CSS3** (Custom Media Queries)
 * **Bootstrap 5** (Layout & Components)
 * **JavaScript (ES6+)** (Logic & LocalStorage)
