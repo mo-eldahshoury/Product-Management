@@ -23,6 +23,7 @@ You can check the live version of the project here:
 [Live Demo](https://product-management-alpha-teal.vercel.app/)
 
 ## 📝 How to Use
+
 1. Enter the product Name, Price, and Category.
 2. Click **Add Product** to save it.
 3. Use the **Search** bar to filter your products.
