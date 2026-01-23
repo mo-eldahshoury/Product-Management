@@ -18,7 +18,7 @@ A modern, responsive Product Management System built with **Vanilla JavaScript**
 * **JavaScript (ES6+)** (Logic & LocalStorage)
 * **SweetAlert2** (Professional Alerts)
 
-## 🌐 Live Demo
+## 🌐 Live Demo 
 You can check the live version of the project here:  
 [Live Demo](https://product-management-alpha-teal.vercel.app/)
 
