@@ -2,7 +2,7 @@ var productName = document.getElementById('pName');
 var productPrice = document.getElementById('pPrice');
 var productCategory = document.getElementById('pCategory');
 
-var currentIndex = -1; // -1 means no product is being updated.
+var currentIndex = -1; // -1 means no product is being updated. 
 var allProducts = [];
 
 
@@ -162,4 +162,5 @@ function resetButtons() {
     var updateBtn = document.getElementById('update-btn');
     if (updateBtn) { updateBtn.style.display = 'none'; }
 }
+
 
