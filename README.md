@@ -29,4 +29,4 @@ You can check the live version of the project here:
 3. Use the **Search** bar to filter your products.
 4. Click **Update** to modify product details or **Delete** to remove them.
 
----
+--- 
