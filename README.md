@@ -1,4 +1,4 @@
-# 🚀 Product Management System (CRUD) 
+# 🚀 Product Management System (CRUD)
 
 A modern, responsive Product Management System built with **Vanilla JavaScript** and styled with **Bootstrap 5**. This project features a sleek Dark Mode UI and integrated **SweetAlert2** for an enhanced user experience.
 
