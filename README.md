@@ -4,7 +4,6 @@ A modern, responsive Product Management System built with **Vanilla JavaScript**
 
 
 
-
 ## ✨ Features 
 
 * **Full CRUD Operations:** Create, Read, Update, and Delete products.
